@@ -1,0 +1,33 @@
+extends layout
+
+block content
+	.card.card-invoice
+		.card-header
+			h2 NY DMV Reservation Dates 
+				span.last-updated Last Updated: 
+					span.lut
+					span.loading.hidden.tiny-loader
+						.lds-ring
+							div
+							div
+							div
+							div
+		.card-body
+			#schedule-table
+				.table-responsive
+					table.table
+						thead.bg-default
+							tr
+								th.col-index &nbsp;
+								th.col-location Location
+								th.col-days Days
+								th.col-times Times
+						tbody
+							tr
+								td.text-center(colspan='4')
+									.block-loader
+										.lds-ring
+												div
+												div
+												div
+												div
